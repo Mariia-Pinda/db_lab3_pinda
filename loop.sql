@@ -1,0 +1,22 @@
+-- select * from releases;
+-- create table relcopy as select * from releases;
+-- select * from relcopy;
+-- delete from relcopy;
+
+-- do $$
+-- declare 
+-- 	rel_id   relcopy.release_id%type;
+-- 	gen_id   relcopy.genre_id%type;
+-- 	s_id     relcopy.song_id%type;
+	
+-- begin
+-- 	rel_id   := '4000';
+-- 	gen_id   := '200';
+-- 	s_id     := '0';
+-- 	for counter in 1..9
+-- 		loop
+-- 			insert into relcopy (release_id, genre_id, song_id, release_date)
+-- 			values (rel_id || counter, gen_id || counter, s_id || counter, (select current_date));
+-- 		end loop;
+-- end;
+-- $$

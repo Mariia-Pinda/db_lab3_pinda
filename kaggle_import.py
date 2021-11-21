@@ -1,5 +1,4 @@
 import csv
-import decimal
 import psycopg2
 
 username = 'pinda_maria'
